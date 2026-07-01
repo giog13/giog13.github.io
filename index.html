@@ -20,10 +20,18 @@
 		</style>
 		-->
 
-		<style>
-			body {background-image: url('Milky_Way.jpeg');
-		}
-			</style>
+	<style>
+    #bg {
+        background-image: url('images/Milky_Way.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+        }
+    </style>	
 
 		<title>Giovanni A. Gollotti</title>
 		<meta charset="utf-8" />
@@ -46,7 +54,7 @@
 							<div class="inner">
 								<h1>Giovanni A. Gollotti</h1>
 								<h3>Astrophysics Master's student at the City University of New York (CUNY) Graduate Center</h3>
-								<h3>Interested in low-mass stars and observational time-domain astrophysics</h3>
+								<h3>Focuses on M dwarfs in the context of stellar magnetic activity and galactic archaeology </h3>
 							</div>
 						</div>
 						<nav>
@@ -68,40 +76,62 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/Frostbite.jpeg" alt="" /></span>
-								<p>Hi, my name is Giovanni Gollotti, but you can call me Gio! I am currently working towards my Astrophysics Master's degree at the City University of New York (CUNY) Graduate Center and will graduate in 2027.
-									In 2025, I graduated with a Bachelor's of Science in Physics & Astronomy from the University of Washington, where I was deeply involved with the astronomy department. </p>
+								<p>Hi, my name is Giovanni Gollotti, but you can call me Gio! I am currently a second-year Astrophysics Master's student at the City University of New York (CUNY) Graduate Center.
+									In 2025, I graduated with a Bachelor's of Science in Physics & Astronomy from the University of Washington, and I was deeply involved with the Astronomy department. </p>
 									
-									<p>As a sophomore, I first researched template generation strategies for the commissioning phase and first year of operations for the Legacy Survey of Space and Time (LSST). For a brief time during junior
+									<p>As a sophomore, I first researched template generation strategies for the commissioning phase and first year of operations of the Legacy Survey of Space and Time (LSST). For a brief time during junior
 									year, I visually inspected quasar spectra from Sloan Digital Sky Survey (SDSS-V) to find changing-look quasars, which visually change on human timescales (months to years). My most 
-									impactful research occurred during my senior year, where I analyzed the photometric and radial velocity variabilities of the young, active M0 dwarf HIP 23309. I fell in love with
-									low-mass stars and time-domain astrophysics as a whole. Post-graduation, I worked as a remote post-baccaleurate research assistant at Northwestern University, where I created cutout images
-									of "brick" images from the Panchromatic Hubble Andromeda Treasury (PHAT) Stellar Cluster Survey taken with the Hubble Space Telescope (HST).</p> 
+									impactful research occurred during my senior year, where I analyzed the photometric and radial velocity variabilities of the young, active M0 dwarf HIP 23309. Post-graduation, I worked as a remote post-baccaleurate research assistant for Northwestern University. I created flobular cluster cutouts
+									of "brick" images from the Panchromatic Hubble Andromeda Treasury (PHAT) Stellar Cluster Survey, taken with the Hubble Space Telescope (HST).</p> 
 									
-								<p>Now I am attending CUNY for graduate school, and I have yet to join a new research group. If you have any projects regarding observational stellar astrophysics, please contact me!</p>
+								    <p>Currently I am searching for nitrogen-rich M dwarfs in the local field with low-resolution observations from the SDSS-V Baryonic Oscillation Spectroscopic Survey (BOSS) database. Nitrogen is important for studying how the Milky Way's stellar halo builds over time, since it is an important tracer
+									for determining whether a star originated from a globular cluster. No one has ever identified a nitrogen-rich M dwarf before, so my research is brand new! For more information on my project, please refer to the Research tab. I hope to continue using M dwarfs as "fossil records" for mapping mapping
+									the evolution of the Milky Way over time, since M dwarfs essentially live forever and maintain the same chemical composition throughout their whole life (as long as they're not in binaries).</p>
 
 							</article>
 
 						<!-- Research -->
 							<article id="research">
 								<h2 class="major">Notable Research</h2>
-								<h3><b>Two Intriguing Transits of HIP 23309 Observed by TESS</b></h3>
+
+								<h3><b>Data-Driven Identification of Candidate Nitrogen-Rich M Dwarfs</b></h3>
+								<span class="image main"><img src="images/NMF_Infographic_Plot_Website.png" alt="" /></span>
+
+								<p>For my Master's thesis, I am working with <i>Dr. Carrie Filion</i> to identify candidate nitrogen-rich M dwarfs in the nearby field, using both observations from the SDSS-V Baryonic Oscillation Spectropscopic Survey (BOSS) database and
+								   synthetic spectral grids between 3500 - 4100 K. I am trying to identify enriched M dwarfs that could have escaped from a globular cluster (GC), since ejected stars from GCs build up the Milky Way's stellar halo over time. GCs have two
+								   distinct stellar populations: one with typical chemical compositions similar to field stars, and another enriched in nitrogen (N), aluminum (Al), helium (He), and sodium (Na) / depleted in carbon (C), oxygen (O), and magnesium (Mg). To date,
+								   no one has ever discovered a nitrogen-rich M dwarf, and there is no literature on how exactly nitrogen affects an M dwarf spectrum. </p>
+								   
+								<p>Since we currently do not know which spectral features are associated with nitrogen, we generated synthetic spectral grids with constant temperature and varying Fe, C, N, and O abundances, so we know exactly how much of a given element is present within
+								   a given stellar atmosphere. To identify which elements are represented by specific spectral features, I broke the spectral grid into its 8 basic components using the Nonnegative Matrix Factorization (NMF) method. Each component represents a unique spectral
+								   feature that varies with metallicity and chemical abundance. Using representative abundances from the M107 globular cluster populations, it appears nitrogen enrichment causes the flux to decrease between 5000 - 7000 Angstroms. </p> 
+								   
+								<p>I'm currently creating heat maps to see which spectral features are associated with nitrogen, so I'll add more updates soon! </p>
+
+								<p><b>Poster:<a href = "https://zenodo.org/records/20644025"></b> Searching For Nitrogen Features in Low-Resolution BOSS M Dwarf Spectra </a></p>
+
+								<h4><b>Two Intriguing Transits of HIP 23309 Observed by TESS</b></h4>
 								<span class="image main"><img src="images/MCMC_html.png" alt="" /></span>
-								<p>During my fourth year as an undergraduate, I studied the photometric and radial velocity variabilities of the young, active M0 dwarf HIP 23309 under the supervision of <i>Prof. James R.A. Davenport</i>
-									and two astronomy Ph.D candidates, <i>Andy Tzanidakis</i> and <i>Tobin Wainer</i>. I analyzed ~5 years of light curves taken with the Transiting Exoplanet Survey Satellite (TESS), since HIP 23039 is located
+								<p> During my fourth year as an undergraduate, I studied the photometric and radial velocity variabilities of the young, active M0 dwarf HIP 23309 under the supervision of two previous Ph.D. students, Dr. <i>Andy Tzanidakis</i> and Dr. <i>Tobin Wainer</i>,
+									and <i>Prof. James R.A. Davenport</i>. I analyzed ~5 years of light curves taken with the Transiting Exoplanet Survey Satellite (TESS), since HIP 23039 is located
 									in the southern continuous viewing zone. In the light curve data, I found two dips: a small one during 2021 (Sector 35) and a larger asymmetrical one during 2023 (Sector 62). I only found two dips,
-									even though I had over 5 years worth of nearly continuous data. <b>"What caused these dips to occur?"</b> is the question my research group and I wanted to answer. </p>
+									even though I had over 5 years worth of nearly continuous data. In 2026, I detected two more dips (Sectors 34 and 68 respectively) in the TESS light curves, which were both
+									asymmetrical in nature. </p>
 
 								<p> Along with the photometric TESS data, I also analyzed radial velocity (RV) data taken from 2004-2006 and 2014-2015 with the High Accuracy Radial velocity Planet Searcher (HARPS) Spectrograph at La Silla Observatory
 									(courtesy of Trifonov et. al (2021)). Radial velocity measurements reveal whether a star is experiencing stellar magnetic activity (starspots & flares), being diminished by dust, or being gravitationally impacted
 									by a companion (either a star, brown dwarf, or planet). With some quick blackbody models and SED fits, we determined the dips were not caused by dust. In order to differentiate between stellar magnetic activity
 									("stellar jitter") and companion transits, we used a simple sinusoidal as our possible orbital model. After plotting 100 random orbital models with a Monte Carlo Markov Chain (MCMC), we can't rule out stellar jitter
 									as a possibility, since our orbital models still aren't constrained with the limited RV data we currently have. If the dips aren't caused by stellar jitter, another possibility is that they represent transits of a
-									brown dwarf with a circumstellar ring.</p>
+									brown dwarf with a circumstellar ring. </p>
 
-								<p>We will soon obtain new RV data later this year. This project is still a work in progress, so check back here for future updates.</p>
+								<p> I also obtained 14 additional radial velocity measurements from the CTIO-1.5m CHIRON spectrograph at Cerro Tololo Observatory. I ran a rejection sampling method on both the CHIRON and HARPS RV measurements bu
+								    unfortunately didn't find any conclusive trend due to HIP 23309's prominent stellar magnetic activity. Even with the new data, I still have no idea what is causing HIP 23309's dips to occur. If you have any insight or
+								    ideas, please contact me, because I'm always open to new collaborations. I hope to continue constraining the stellar magnetic activity of young, active M dwarfs such as HIP 23309, so I can better understand this unique
+								    behavior.</p>
 
 								<p><b>Publications:<a href = "https://iopscience.iop.org/article/10.3847/2515-5172/ad9743"></b> Gollotti et. al, <i>RNAAS</i> 8, 293 (2024)</a></p>
-								<p><b>Posters:</b> Two Distinct Transits of HIP 23309 Observed by TESS, AAS 245 Meeting (2025) </p> <!--Add link to poster-->
+								<p><b>Posters:</b> Two Distinct Transits of HIP 23309 Observed by TESS, AAS 245 Meeting (2025) </p> 
 							</article>
 
 						<!-- About -->
@@ -109,30 +139,28 @@
 								<h2 class="major">About Me</h2>
 								<span class="image main"><img src="images/Rowing.jpeg" alt="" /></span>
 
-								<p> Outside of academia, I enjoy rowing, reading tons of books, taking spin classes, watching psychological horror movies, attending improv comedy shows,
-									and hanging out with my roommate's cat Winston. Also here are some fun facts about me: I am allergic to eggplant, broke my arm while working at Jamba Juice, participated in many sports as a kid
-									(soccer, horseback riding, Tae Kwon Do, cross country, track & field, and rowing), and sing as a bass in choir. 
+								<p> Outside of academia, I enjoy rowing, reading tons of books, taking spin classes, watching psychological horror movies, 
+									and hanging out with my roommate's cat Winston. 
+
+									I wouldn't be who I am today without my research advisors, and I am incredibly grateful for their time, commitment, and compassion.
+									I attribute my love for M dwarfs to Dr. Filion, Dr. Tzanidakis, Dr. Wainer, and Prof. Davenport. Initially I was interested in black hole/galaxy 
+									coevolution, but during my senior undergrad project and Master's thesis, I realized stellar astronomy is truly the path for me. Mentorship is
+									truly integral to who I am as an astrophysicist, and I hope to become an inspiring mentor to other undergrads in the future.
 
 								
 									<h2>Impactful Mentors:</h2> <!--Want to add pictures and websites for each mentor / can I add more headers to a page?-->
 
-										<p><a href = "https://jradavenport.github.io/"><b>James R.A. Davenport</b></a>: Faculty advisor for HIP 23309 project (2024-25)</p>
-										<p><a href = "https://andytza.github.io/"><b>Anastasios (Andy) Tzanidakis</b></a>: Grad student mentor for HIP 23309 project (2024-25)</p>
-										<p><a href = "https://tobin-wainer.github.io/"><b>Tobin Wainer</b></a>: Grad student mentor for HIP 23309 and PHAT projects (2024-25)</p>
-										<p><b>Scott F. Anderson</b>: Research advisor for SDSS-V changing-look quasar project (2023-24)</p>
+										<p><a href = "https://carriefilion.github.io/"><b>Carrie Filion</b></a>: Master's thesis advisor for nitrogen-rich M dwarf project (2025 - present)</p>
+										<p><a href = "https://jradavenport.github.io/"><b>James R.A. Davenport</b></a>: Faculty advisor for HIP 23309 project (2024 - 25)</p>
+										<p><a href = "https://andytza.github.io/"><b>Anastasios (Andy) Tzanidakis</b></a>: Grad student mentor for HIP 23309 project (2024 - 25)</p>
+										<p><a href = "https://tobin-wainer.github.io/"><b>Tobin Wainer</b></a>: Grad student mentor for HIP 23309 and PHAT projects (2024 - 25)</p>
+										<p><b>Scott F. Anderson</b>: Research advisor for SDSS-V changing-look quasar project (2023 - 24)</p>
 										<p><a href = "http://faculty.washington.edu/ecbellm/"><b>Eric C. Bellm</b></a>: Research advisor for LSST template generation project (2023)</p>
 
 							</article>
 
-							<!-- CV -->
-							<article id="CV">
-								
-								<object class = "pdf"
-										data = "CV_Giovanni_Gollotti.pdf"
-										width = "800"
-										height = "500">
-								</object>
-							</article>
+						<!-- CV -->
+						<li><a href = "CV_Giovanni_Gollotti.pdf" target = "_blank" rel="noopener">CV</a></li>
 
 						<!-- Contact -->
 							<article id="contact">
